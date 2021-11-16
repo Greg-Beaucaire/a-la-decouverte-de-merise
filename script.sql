@@ -2,7 +2,7 @@ CREATE TABLE individu(
    id_individu SERIAL,
    code VARCHAR(250)  NOT NULL,
    nom VARCHAR(250)  NOT NULL,
-   prénom VARCHAR(250)  NOT NULL,
+   prenom VARCHAR(250)  NOT NULL,
    numero VARCHAR(50) ,
    rue VARCHAR(250) ,
    ville VARCHAR(250) ,
@@ -13,7 +13,7 @@ CREATE TABLE individu(
 
 CREATE TABLE professeur(
    id_individu INTEGER,
-   compétence VARCHAR(250) ,
+   competence VARCHAR(250) ,
    PRIMARY KEY(id_individu),
    FOREIGN KEY(id_individu) REFERENCES individu(id_individu)
 );
